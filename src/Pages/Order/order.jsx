@@ -179,9 +179,6 @@ const Order = ({
       );
     }
   };
-  const getImagePathByIndex = (index) => {
-    return `/images/${brand}-crackers/${index + 1}.jpg`;
-  };
 
   return (
     <div className="full-container">
