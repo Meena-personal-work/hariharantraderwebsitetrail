@@ -11,7 +11,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <img src="./crackers-website-banner6.jpg"></img>
+      <img src="./crackers-website-banner6.jpg" alt="contact banner"></img>
       <div className="contact-info-img">
         <div className="contact-info">
           <h2 className="contact-heading">Contact Us :-</h2>
