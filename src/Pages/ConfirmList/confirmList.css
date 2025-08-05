@@ -139,7 +139,7 @@
 
 
 .pdf-download-btn {
-  background-color: #117180;
+  background-color: #25D366;
   /* WhatsApp green */
   color: white;
   padding: 10px 18px;
@@ -150,9 +150,13 @@
   cursor: pointer;
 }
 
+.whatsapp-download-text {
+  text-decoration: underline;
+  text-decoration-color: #25D366;
+}
 
 .pdf-download-btn:hover {
-  background-color: #117180;
+  background-color: #1ebe5d;
 }
 
 .pdf-download-btn-container {

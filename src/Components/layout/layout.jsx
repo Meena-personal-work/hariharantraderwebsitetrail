@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const hideButton = location.pathname === "/order";
+  const hideButton = location.pathname === "/order" || location.pathname === "/confirmList";
 
   const openWhatsApp = () => {
     window.open("https://wa.me/919444324237", "_blank");

@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="footer-section links">
           <h4>Site Map</h4>
-          <ul>
+          <ul className="site-map-ul">
             <li>
               <Link to="/">Home</Link>
             </li>

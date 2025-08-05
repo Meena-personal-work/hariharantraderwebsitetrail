@@ -174,9 +174,8 @@ const ConfirmListPage = ({
 
   const getOrderDate = () => {
     const today = new Date();
-    const formattedDate = `${today.getDate()}/${
-      today.getMonth() + 1
-    }/${today.getFullYear()}`;
+    const formattedDate = `${today.getDate()}/${today.getMonth() + 1
+      }/${today.getFullYear()}`;
     return formattedDate;
   };
 
@@ -228,7 +227,7 @@ const ConfirmListPage = ({
                 <th className="tablecell" style={{ fontSize: "13px" }}>
                   Qty
                 </th>
-                <th className="tablecell">{`${brand === 'ayyan' ? '50% Discount Rate' : '80% Discount Rate' }`}</th>
+                <th className="tablecell">{`${brand === 'ayyan' ? '50% Discount Rate' : '80% Discount Rate'}`}</th>
               </tr>
             </thead>
             <tbody>
@@ -430,7 +429,7 @@ const ConfirmListPage = ({
                           fontSize: 13,
                         }}
                       >
-                        {`${brand === 'ayyan' ? '50% Discount Rate Per Box' : '80% Discount Rate Per Box' }`}
+                        {`${brand === 'ayyan' ? '50% Discount Rate Per Box' : '80% Discount Rate Per Box'}`}
                       </Text>
                       <Text
                         style={{
@@ -626,11 +625,16 @@ const ConfirmListPage = ({
               <div className="download-container">Loading document...</div>
             ) : (
               <div className="pdf-download-btn-container">
-                <button className="pdf-download-btn">
-                  {isDownloaded
-                    ? " "
-                    : "Download PDF and send it to our WhatsApp Number"}
-                </button>
+                  {isDownloaded ? (
+                    " "
+                  ) : (
+                    <button className="pdf-download-btn">
+                      <span className="whatsapp-download-text">
+                        Download PDF and send it to our WhatsApp Number
+                      </span>
+                    </button>
+
+                  )}
               </div>
             )
           }
